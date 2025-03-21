@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Vertical centering */
+    align-items: center;
+        
+}
+.add-btn{
+    display: block;
+    padding: 5px;
+    background-color: rgba(2, 50, 65, 0.5);
+    border: none;
+    border-radius: 5px;
+    color:white;
+}
+.text{
+    width: 500px;
+    height:max-content;
+    text-align: center;
+    
+}
+li{
+    list-style: none;
+}

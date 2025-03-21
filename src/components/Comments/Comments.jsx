@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './Comments.css'
 const Comments = () => {
     const [newComment, setNewComment] = useState('');
     const [comments, setComments] = useState([]);
@@ -12,7 +12,7 @@ const Comments = () => {
             setComments((prevComments) => [...prevComments, newComment]);
             console.log('New Comment:', newComment);
             setNewComment('');
-            setShow(false);  // Hide the form after adding a comment
+            setShow(false); 
         }
         else{
              setShow(false);
@@ -20,22 +20,23 @@ const Comments = () => {
     };
 
     return (
-        <div>
+        <div className='container'>
             <h1>User Comments</h1>
 
             {show ? (
                 <form onSubmit={handleAddComment}>
                     <textarea
-                        rows="5"
+                        rows="10"
                         cols="30"
                         value={newComment}
                         onChange={(e) => setNewComment(e.target.value)}
                         placeholder="Add your comment..."
+                        className='text'
                     />
-                    <button type="submit">Add Comment</button>
+                    <button type="submit" className='add-btn'>Add Comment</button>
                 </form>
             ) : (
-                <button onClick={() => setShow(true)}>Add Comment</button>
+                <button onClick={() => setShow(true)} className='add-btn'>Add Comment</button>
             )}
 
             <div>

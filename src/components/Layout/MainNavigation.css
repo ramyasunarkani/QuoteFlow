@@ -1,0 +1,41 @@
+.header{
+    background-color: rgba(2, 50, 65, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 5px;
+}
+.logo{
+    font-size: 25px;
+    color: rgb(249, 235, 235);
+    margin-left: 6rem;
+    font-weight: bolder;
+    align-items: center;
+}
+.nav {
+    
+    padding: 15px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #88dfdf;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+    color: #e6fcfc;
+}
